@@ -14,6 +14,7 @@ function playerFixer() {\
 			ytplayer.config.args.ad_flags=\"0\";\
 			ytplayer.config.args.ad3_module=null;\
 			ytplayer.config.args.allow_html5_ads=\"0\";\
+			ytplayer.config.args.iv_load_policy=\"0\";\
 			ytplayer.config.loaded=false;\
 			ytplayer.load();\
 			clearInterval(fixIntervalVar);\
