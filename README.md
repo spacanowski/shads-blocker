@@ -1,7 +1,8 @@
 #shads-blocker
 =============
 
-Project made for learning Chrome Extensions which as by-product omits all ads on YT videos
+Turning off ads and invideo annotations in YT videos by Chrome Extension.
+Project made for learning Chrome Extensions and which as by-product omits all ads and annotations on YT videos.
 
 #How to test
 
