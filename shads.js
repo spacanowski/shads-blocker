@@ -10,7 +10,7 @@
 var code = "\
 function playerFixer() {\
 	var fixIntervalVar = setInterval(function() {\
-		if (typeof ytplayer !== 'undefined' && ytplayer !== null) {\
+		if (typeof ytplayer !== 'undefined' && ytplayer !== null && ytplayer.config.loaded === true) {\
 			ytplayer.config.args.ad_flags=\"0\";\
 			ytplayer.config.args.ad3_module=null;\
 			ytplayer.config.args.allow_html5_ads=\"0\";\
