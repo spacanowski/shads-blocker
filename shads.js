@@ -24,7 +24,7 @@ function playerFixer() {\
 			if (document.readyState === 'complete') {\
 				var currentHref = window.location.href,\
 					handler = function() {\
-						if (currentHref !== window.location.href && window.location.href.indexOf(\"watch\") > -1) {\
+						if (currentHref !== window.location.href && window.location.pathname === \"/watch\") {\
 							currentHref = window.location.href;\
 							document.body.removeEventListener(\"DOMSubtreeModified\", handler);\
 							playerFixer();\
@@ -39,7 +39,7 @@ playerFixer();\
 ";
 
 var addIntervalVar = setInterval(function() {
-		if (document.head && window.location.href.indexOf(\"watch\") > -1) {
+		if (document.head && window.location.pathname === "/watch") {
 			var script = document.createElement('script');
 			script.appendChild(document.createTextNode(code));
 			script.setAttribute("id", "shads");
