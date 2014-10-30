@@ -27,7 +27,7 @@ function playerFixer() {\
 						if (currentHref !== window.location.href && window.location.pathname === \"/watch\") {\
 							currentHref = window.location.href;\
 							document.body.removeEventListener(\"DOMSubtreeModified\", handler);\
-							playerFixer();\
+							setTimeout(playerFixer, 1500);\
 						}\
 					};\
 				document.body.addEventListener(\"DOMSubtreeModified\", handler, false);\
